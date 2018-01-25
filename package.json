@@ -10,7 +10,8 @@
   },
   "scripts": {
     "docs:prepare": "gitbook install",
-    "docs:watch": "npm run docs:prepare && gitbook serve"
+    "docs:watch": "npm run docs:prepare && gitbook serve",
+    "docs:publish": "npm run docs:prepare && gitbook build && node .bin/docs.build.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,11 @@
   "homepage": "https://github.com/Afterman-Software/Afterman.Testing#readme",
   "devDependencies": {
     "gitbook-cli": "^2.3.2"
+  },
+  "dependencies": {
+    "gitbook-plugin-anchorjs": "^1.1.1",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-prism": "^2.3.0",
+    "shelljs": "^0.8.1"
   }
 }

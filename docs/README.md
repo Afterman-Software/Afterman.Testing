@@ -1,7 +1,4 @@
-# Table of Contents
+# Afterman Software Test Library
 
-* [Read Me](/README.md)
-* [Introduction](/docs/introduction.md)
-* [API Reference](/docs/api_reference/README.md)
-* [Examples](/docs/examples/README.md)
-* [Adapters](/docs/adapters/README.md)
+BDD Unit Testing Framework
+
