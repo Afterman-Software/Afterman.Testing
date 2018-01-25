@@ -9,10 +9,10 @@ if (hasGit !== true) {
 }
 else {
   console.log('Updating the documentation branch with docs updates from master');
-  //shell.exec('git checkout gh-pages');
-  //shell.exec('git checkout master -- docs/');
+  shell.exec('git checkout gh-pages');
+  shell.exec('git checkout master -- docs/');
   shell.exec('git status');
-  //shell.exec('git add --all && git commit -m "Retrieved docs updates from Master"');
+  shell.exec('git add --all && git commit -m "Retrieved docs updates from Master"');
 }
 
 const bookPath = path.resolve(__dirname, '..', '_book');
