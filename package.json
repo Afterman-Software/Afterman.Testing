@@ -1,0 +1,29 @@
+{
+  "name": "afterman-testing",
+  "version": "1.0.0",
+  "description": "BDD Unit Testing Framework",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "docs:prepare": "gitbook install",
+    "docs:watch": "npm run docs:prepare && gitbook serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Afterman-Software/Afterman.Testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Afterman-Software/Afterman.Testing/issues"
+  },
+  "homepage": "https://github.com/Afterman-Software/Afterman.Testing#readme",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}

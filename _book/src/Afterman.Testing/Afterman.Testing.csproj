@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <Authors>Chris Wall &lt;chris@aftermansoftware.com&gt;</Authors>
+    <Company>Afterman Software</Company>
+    <Description>Universal B.D.D. unit testing framework.</Description>
+    <RepositoryType>GIT</RepositoryType>
+    <RepositoryUrl>https://github.com/Afterman-Software/Afterman.Testing.git</RepositoryUrl>
+    <Copyright>Copyright 2017, Afterman Software</Copyright>
+    <PackageIconUrl>https://avatars0.githubusercontent.com/u/19804281?s=400&amp;u=8693bd9854e893578e9530b09edf34a835cf321c&amp;v=4</PackageIconUrl>
+    <PackageTags>BDD, TDD, Unit Testing, Test</PackageTags>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.TestPlatform" Version="14.0.0.1" />
+    <PackageReference Include="Moq" Version="4.8.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.3.0-beta2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+</Project>
