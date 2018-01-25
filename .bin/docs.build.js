@@ -7,7 +7,7 @@ const inGitbook = path.resolve(bookPath, 'gitbook');
 const inIndexHtml = path.resolve(bookPath, 'index.html');
 const inSearchIndex = path.resolve(bookPath, 'search_index.json');
 
-const docsPath = path.resolve(__dirname, '..', 'docs');
+const docsPath = path.resolve(__dirname, '..');
 const outGitbook = path.resolve(docsPath, 'gitbook');
 const outIndexHtml = path.resolve(docsPath, 'index.html');
 const outSearchIndex = path.resolve(docsPath, 'search_index.json');
@@ -36,8 +36,9 @@ console.log('Cleaning up source directory');
 shell.rm('-rf', bookPath);
 
 console.log('Publishing to gh-pages');
-if (shell.which('git') === true) {
-  var code = shell.exec('git commit -am "Auto-commit"').code;
+if (shell.which('git')) {
+  var commitCode = shell.exec('git add --all && git commit -am "Auto-commit"').code;
+  shell.exec('git push origin gh-pages');
 }
 else {
   console.log('Publish to gh-pages failed: git cli not found on this machine');
