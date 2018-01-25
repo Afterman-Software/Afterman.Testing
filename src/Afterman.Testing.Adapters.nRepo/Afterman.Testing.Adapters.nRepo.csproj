@@ -92,14 +92,14 @@
     <Compile Include="MockRepositoryHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Afterman.Testing\Afterman.Testing.csproj">
-      <Project>{1d759572-0937-4798-a2be-52213e3f6453}</Project>
-      <Name>Afterman.Testing</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Afterman.Testing\Afterman.Testing.csproj">
+      <Project>{9f4b39b6-3c17-4e4f-93e3-4e4c166cbbe0}</Project>
+      <Name>Afterman.Testing</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

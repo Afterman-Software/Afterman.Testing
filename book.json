@@ -1,0 +1,15 @@
+{
+  "gitbook": "3.2.2",
+  "title": "Afterman Test Library",
+  "plugins": ["prism", "-highlight", "github", "anchorjs"],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/Afterman-Software/Afterman.Testing"
+    },
+    "theme-default": {
+      "styles": {
+        "website": "docs/assets/gitbook.css"
+      }
+    }
+  }
+}
